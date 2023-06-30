@@ -8,9 +8,8 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import load_model
-from tensorflow.keras.optimizers import Adam
 
-model = load_model('hdr_model.h5', custom_objects={'Adam': Adam})
+model = load_model('hdr_model.h5')
 
 img_size = 28
 
